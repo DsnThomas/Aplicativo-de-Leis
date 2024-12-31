@@ -1,7 +1,8 @@
 {
-  "name": "legislative-scraper",
+  "name": "Lei na Mão",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
