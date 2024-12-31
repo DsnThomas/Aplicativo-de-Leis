@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Mais informações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <img
+      class="img-item"
+      src="https://i.ibb.co/RpKC5JN/imagem-2024-06-15-235935481-removebg-preview.png"
+      alt="Imagem de erro"
+    />
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Resumo do Aplicativo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Este aplicativo foi desenvolvido para ajudar as pessoas a pesquisarem rapidamente sobre as leis brasileiras, tanto offline quanto online. Nossa missão é facilitar o acesso à informação jurídica de maneira prática e eficiente.
+      </ion-card-content>
+    </ion-card>
+
+    <br>
+    <br>
+    <p class="texto-item color">
+      Esta precisando de ajuda? 🥺
+    </p>
+    <p class="textp-item color">
+      Nos procure no instagram para que possamos te ajudar com seu problema!
+    </p>
+
+    <ion-card (click)="openUrl('https://www.instagram.com/thomas_dias11/')">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-icon name="logo-instagram" class="instagram-icon"></ion-icon>
+          Siga o perfil do desenvolvedor!
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Clique aqui para acessar o perfil do desenvolvedor no Instagram.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="openUrl('https://www.instagram.com/unifucamp/')">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-icon name="logo-instagram" class="instagram-icon"></ion-icon>
+          Siga o perfil da UNIFUCAMP!
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Clique aqui para acessar o perfil da UNIFUCAMP no Instagram.
+      </ion-card-content>
+    </ion-card>
+
+
+    <p class="textp-item color">
+      Desenvolvido por Thomas Dias. Fabrica de softwares UNIFUCAMP - 2024
+    </p>
+  </div>
+</ion-content>

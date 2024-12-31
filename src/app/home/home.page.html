@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/tabs/page2']" text="Voltar" icon="caret-back"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end" class="search-button" [class.expand]="showSearch" (click)="toggleSearch()">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="search-toolbar" [class.show]="showSearch">
+    <ion-searchbar debounce="500" (ionInput)="searchArticles($event)" color="dark" placeholder="Pesquisar"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content-padding" *ngIf="filteredContent; else showAllContent">
+    <!-- Exibindo conteúdo filtrado -->
+    <div class="custom-background" style="color: #000;" [innerHTML]="filteredContent"></div>
+  </div>
+  <ng-template #showAllContent>
+    <!-- Exibir todo o conteúdo quando não houver nenhum filtrado -->
+    <div class="content-padding custom-background" style="color: #000;">
+      <div [innerHTML]="htmlContent"></div>
+      <p *ngIf="!htmlContent">Nenhum conteúdo disponível. Conecte a internet e entre em todos os topicos pelo menos uma vez!</p>
+    </div>
+  </ng-template>
+</ion-content>

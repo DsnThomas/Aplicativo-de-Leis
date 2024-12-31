@@ -1,0 +1,62 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+.content-padding {
+  padding: 16px;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.search-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.search-button.expand {
+  transform: scale(1.2);
+}
+
+.search-toolbar {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.search-toolbar.show {
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.custom-background {
+  background-color: #f0f8ff;
+  color: #000 !important;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.custom-background * {
+  color: #000 !important; /* Garantir que todos os elementos internos tenham a cor preta */
+}

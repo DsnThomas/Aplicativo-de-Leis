@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://www.planalto.gov.br",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  

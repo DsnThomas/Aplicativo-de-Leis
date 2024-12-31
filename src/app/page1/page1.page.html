@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft"> 
+    <img class="img-item" src="https://i.ibb.co/8js4P3S/logo-pag1.png" alt="Imagem principal simbolizando as leis"/>
+    <p class="color"> 
+      Buscando mais praticidade na procura por leis brasileiras! 😎
+    </p>
+
+    <ion-card [routerLink]="['/tabs/page2']">
+      <ion-item class="color">
+        <ion-thumbnail slot="start">
+          <img src="https://i.ibb.co/fx0xM6Q/law-book-6744025.png" />
+        </ion-thumbnail>
+        <ion-label>Começar Agora</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card [routerLink]="['/tabs/page3']">
+      <ion-item class="color">
+        <ion-thumbnail slot="start">
+          <img src="https://i.ibb.co/p16KmbK/imagem-2024-06-15-221730840.png" />
+        </ion-thumbnail>
+        <ion-label>Mais informações</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

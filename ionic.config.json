@@ -1,0 +1,7 @@
+{
+  "name": "legislative-scraper",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
